@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
             removeButton.addEventListener("click", async () => {
               try {
                 const response = await fetch(
-                  `/activities/${encodeURIComponent(activity)}/participants?email=${encodeURIComponent(email)}`,
+                  `/activities/${encodeURIComponent(name)}/participants?email=${encodeURIComponent(email)}`,
                   {
                     method: "DELETE",
                   }
